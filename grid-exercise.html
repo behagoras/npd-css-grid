@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .Container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      height: 100vh;
+      width: 100%;
+      grid-gap: 16px;
+      grid-auto-flow: dense;
+    }
+    .element {
+      background: blue;
+    }
+    .element2{
+      background: red;
+      grid-column: span 2;
+    }
+    .element3{
+      background: green;
+      grid-column: span 3;
+    }
+  </style>
+  <div class="Container">
+    <div class="element3"></div>
+    <div class="element2"></div>
+    <div class="element2"></div>
+    <div class="element3"></div>
+    <div class="element3"></div>
+    <div class="element2"></div>
+    <div class="element"></div>
+    <div class="element"></div>
+    <div class="element"></div>
+    <div class="element"></div>
+    <div class="element"></div>
+  </div>
+</body>
+</html>
